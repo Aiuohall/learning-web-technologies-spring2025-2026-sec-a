@@ -1,0 +1,19 @@
+# XAMPP files - Ignore everything
+/xampp/
+/dashboard/
+/img/
+applications.html
+bitnami.css
+favicon.ico
+index.php
+/webalizer/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Only track lab task folders
+!/Lab_task1/
+!/Lab_task2/
+!/Lab_task3/
