@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calc">
+        <fieldset> 
+            <legend>
+
+     <h3>Calculator</h3>
+     </legend>
+        
+        <label for="display">Display:
+
+        </label>
+
+        <br/>
+        <input type="text" name="display" id="display" placeholder="Enter numbers to show result" style="width: 250px; font-size: 15px;" readonly>
+        <br/>
+        <br/>
+        
+        <label>Number Buttons:
+
+    </label>
+</br>
+        <br/>
+       
+  <input type="button" value="7" onclick="calc.display.value += '7'">
+
+    <input type="button" value="8" onclick="calc.display.value += '8'">
+     <input type="button" value="9" onclick="calc.display.value += '9'">
+     <input type="button" value="/" onclick="calc.display.value += '/'">
+        <br/>
+
+        <br/>
+
+        <input type="button" value="4" onclick="calc.display.value += '4'">
+        <input type="button" value="5"  onclick="calc.display.value += '5'">
+        <input type="button" value="6"  onclick="calc.display.value += '6'">
+        <input type="button" value="*" onclick="calc.display.value += '*'">
+        <br/>
+           
+        <br/>
+        <input type="button" value="1" onclick="calc.display.value += '1'">
+        <input type="button" value="2" onclick="calc.display.value += '2'">
+        <input type="button" value="3" onclick="calc.display.value += '3'">
+        <input type="button" value="-" onclick="calc.display.value += '-'">
+        <br/>
+        <br/>
+        <input type="button" value="0" onclick="calc.display.value += '0'">
+        <input type="button" value="." onclick="calc.display.value += '.'">
+        <input type="button" value="=" onclick="calc.display.value = eval(calc.display.value)">
+        <input type="button" value="+" onclick="calc.display.value += '+'">
+        <br/>
+        <br/>
+        
+        <fieldset> 
+            <legend>Controls: 
+
+            </legend>
+
+  <label for="clear">Clear Display</label>
+            <br/>
+         <input type="button" value="C" onclick="calc.display.value = ''" id="clear">
+            <br/>
+
+            <br/>
+        </fieldset>
+        
+        <br/>
+        <input type="reset" value="Reset">
+    </form>
+    <script src ="calculator.js"></script>
+</body>
+</html>
